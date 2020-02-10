@@ -69,7 +69,7 @@ C:\Projects\Sitecore\SitecoreApplication1\events.tac.local\bin\System.Web.Webpag
 C:\Projects\Sitecore\SitecoreApplication1\events.tac.local\bin\System.Web.Helpers.xml
 C:\Projects\Sitecore\SitecoreApplication1\events.tac.local\bin\System.Web.Mvc.xml
 C:\Projects\Sitecore\SitecoreApplication1\events.tac.local\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Projects\Sitecore\SitecoreApplication1\events.tac.local\obj\Debug\events.tac.local.csprojAssemblyReference.cache
 C:\Projects\Sitecore\SitecoreApplication1\events.tac.local\obj\Debug\events.tac.local.csproj.CopyComplete
 C:\Projects\Sitecore\SitecoreApplication1\events.tac.local\obj\Debug\events.tac.local.dll
 C:\Projects\Sitecore\SitecoreApplication1\events.tac.local\obj\Debug\events.tac.local.pdb
+C:\Projects\Sitecore\SitecoreApplication1\events.tac.local\obj\Debug\events.tac.local.csprojAssemblyReference.cache
