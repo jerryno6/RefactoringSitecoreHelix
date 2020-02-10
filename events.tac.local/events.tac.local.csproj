@@ -91,7 +91,7 @@
     </Reference>
     <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
-    </Reference>	
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -208,6 +208,10 @@
     <Content Include="Web.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Views\TAC\Events\Layouts\Events.cshtml" />
+    <Content Include="Views\TAC\Events\Layouts\Content-Page.cshtml" />
+    <Content Include="Views\TAC\Events\Layouts\Event-Detail.cshtml" />
+    <Content Include="Views\TAC\Events\Layouts\Event-List.cshtml" />
+    <Content Include="Views\TAC\Events\Layouts\Event-Section.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
