@@ -226,6 +226,9 @@
     <Content Include="Views\EventIntro\Index.cshtml" />
     <Content Include="Views\TAC\Events\SideContent.cshtml" />
     <Content Include="Views\TAC\Events\PageContent.cshtml" />
+    <Content Include="Views\TAC\Events\Two-Column.cshtml" />
+    <Content Include="Views\TAC\Events\One-Column.cshtml" />
+    <Content Include="Views\TAC\Events\HomeContent.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
