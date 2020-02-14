@@ -1,11 +1,24 @@
 ﻿@using Sitecore.Mvc
 @using Sitecore.Mvc.Analytics.Extensions
 @using Sitecore.Mvc.Presentation
+@using Sitecore.Links
+
 @model RenderingModel
 @{
     Layout = null;
 }
 
+@functions {
+    string SitecoreCanonicalUrl()
+    {
+        var options = LinkManager.GetDefaultUrlOptions();
+        options.AlwaysIncludeServerUrl = true;
+        options.LanguageEmbedding = LanguageEmbedding.Always;
+        options.SiteResolving = true;
+
+        return LinkManager.GetItemUrl(Model.Item, options);
+    }
+}
 
 <!DOCTYPE html>
 <!--[if IE 9]><html lang="en" class="ie9 no-js"><![endif]-->
@@ -14,6 +27,7 @@
 <!--<![endif]-->
 
 <head>
+    <link rel="canonical" href="@SitecoreCanonicalUrl()" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />

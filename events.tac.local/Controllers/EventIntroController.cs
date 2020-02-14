@@ -20,7 +20,7 @@ namespace events.tac.local.Controllers
         public static EventIntro CreateModel()
         {
             var item = RenderingContext.Current.ContextItem;
-
+            //var link = Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Item);
             return new EventIntro()
             {
                 ContentHeading = new HtmlString(FieldRenderer.Render(item, "ContentHeading")),
