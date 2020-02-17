@@ -1,9 +1,6 @@
 ﻿using events.tac.local.Models;
 using Sitecore.Mvc.Presentation;
 using Sitecore.Web.UI.WebControls;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
@@ -20,7 +17,7 @@ namespace events.tac.local.Controllers
         public static EventIntro CreateModel()
         {
             var item = RenderingContext.Current.ContextItem;
-            //var link = Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Item);
+            
             return new EventIntro()
             {
                 ContentHeading = new HtmlString(FieldRenderer.Render(item, "ContentHeading")),
