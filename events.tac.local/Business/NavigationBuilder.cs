@@ -23,6 +23,7 @@ namespace events.tac.local.Business
         {
             this._context = renderingContext;
         }
+
         public NavigationMenuItem Build()
         {
             var root = _context?.DatasourceOrContextItem;

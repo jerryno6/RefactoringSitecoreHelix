@@ -99,9 +99,11 @@
   <ItemGroup>
     <Compile Include="Business\BreadcrumbBuilder.cs" />
     <Compile Include="Business\NavigationBuilder.cs" />
+    <Compile Include="Business\RelatedEventsProvider.cs" />
     <Compile Include="Controllers\BreadcrumbController.cs" />
     <Compile Include="Controllers\EventIntroController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Controllers\RelatedEventsController.cs" />
     <Compile Include="Models\EventIntro.cs" />
     <Compile Include="Models\NavigationItem.cs" />
     <Compile Include="Models\NavigationMenuItem.cs" />
@@ -239,6 +241,7 @@
     <Content Include="Views\TAC\Events\FeatureEvent.cshtml" />
     <Content Include="Views\Breadcrumb\Index.cshtml" />
     <Content Include="Views\Navigation\Index.cshtml" />
+    <Content Include="Views\RelatedEvents\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
