@@ -44,12 +44,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Sitecore.ContentSearch, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ContentSearch.NoReferences.9.0.0\lib\net461\Sitecore.ContentSearch.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.ContentSearch.Linq, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ContentSearch.Linq.NoReferences.9.0.0\lib\net461\Sitecore.ContentSearch.Linq.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Kernel.NoReferences.9.0.0\lib\net461\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -110,9 +104,7 @@
     <Compile Include="Controllers\EventIntroController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
     <Compile Include="Controllers\RelatedEventsController.cs" />
-    <Compile Include="Models\EventDetails.cs" />
     <Compile Include="Models\EventIntro.cs" />
-    <Compile Include="Models\EventsList.cs" />
     <Compile Include="Models\NavigationItem.cs" />
     <Compile Include="Models\NavigationMenuItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -255,6 +247,7 @@
     <Content Include="Views\Breadcrumb\Index.cshtml" />
     <Content Include="Views\Navigation\Index.cshtml" />
     <Content Include="Views\RelatedEvents\Index.cshtml" />
+    <Content Include="Views\TAC\Vu\Layouts\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -268,7 +261,9 @@
       <Name>TAC.Sitecore.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\TAC\Vu\Components\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
