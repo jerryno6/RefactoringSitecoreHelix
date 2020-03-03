@@ -36,4 +36,21 @@
   <File Include="Views\TAC\Events\PageContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="master">{ED56F46F-AFCA-42EB-8D87-5BC1A002F05B}</Item>
   </File>
+  <File Include="Views\TAC\Vu\Layouts\Index.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/TAC/Vu/Layouts/Index.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{8F235B33-3FA5-4E28-AFD4-6A29B486B1C6}</Item>
+  </File>
+  <File Include="Views\TAC\Vu\Components\VuFooter.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{8026B487-5726-4796-A4EB-039FA0769B54}</Item>
+  </File>
+  <File Include="Views\TAC\Vu\Components\VuHeaderFull.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{E28167DD-0084-442E-80CD-225809EE1CD1}</Item>
+  </File>
+  <File Include="Views\TAC\Vu\Components\VuHeeaderSimple.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{C2944D70-2EEB-4D77-8F8F-C24546917373}</Item>
+  </File>
+  <File Include="Views\TAC\Vu\Layouts\VuEventDetails.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/TAC/Vu/Layouts/VuEventDetails.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{A489B700-E57C-43B6-9094-31622301A452}</Item>
+  </File>
 </Project>
