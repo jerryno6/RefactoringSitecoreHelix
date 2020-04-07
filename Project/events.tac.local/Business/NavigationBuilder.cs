@@ -40,7 +40,7 @@ namespace events.tac.local.Business
         {
             return node
                 .GetChildren()
-                .Where(x=>x["ExcludeFromNavigation"] != "1")
+                .Where(x => x["ExcludeFromNavigation"] != "1")
                 .Select(i => new NavigationMenuItem
                 (
                     title: i.DisplayName,

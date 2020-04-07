@@ -3,11 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "events.tac.local", "events.tac.local\events.tac.local.csproj", "{0A34F954-7EEA-4E86-958A-F38FD54EC77E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Environment", "Environment", "{850CE159-5CAD-42B5-9EFE-783FB8EDF7B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "events.tac.local.Tests", "events.tac.local.Tests\events.tac.local.Tests.csproj", "{3C466BA6-3532-4DBD-82A1-167D9EFC919F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{192767BF-0AEB-44BC-AD0B-283EDD193D28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAC.Sitecore.Abstractions", "TAC.Sitecore.Abstractions\TAC.Sitecore.Abstractions.csproj", "{71417F51-8B93-4F15-A2BB-BB12FE286B24}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{68BB4A8A-6135-469F-9362-4C2C00704015}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{BB8C6943-F803-4E25-BEB2-BABDDD33943D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAC.Sitecore.Abstractions", "Foundation\TAC.Sitecore.Abstractions\TAC.Sitecore.Abstractions.csproj", "{71417F51-8B93-4F15-A2BB-BB12FE286B24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Breadcrumb", "Breadcrumb", "{541D4C8C-B767-4E98-B0A9-58E383F498A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "events.tac.local", "Project\events.tac.local\events.tac.local.csproj", "{0A34F954-7EEA-4E86-958A-F38FD54EC77E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "events.tac.local.Tests", "Project\events.tac.local.Tests\events.tac.local.Tests.csproj", "{3C466BA6-3532-4DBD-82A1-167D9EFC919F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71417F51-8B93-4F15-A2BB-BB12FE286B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71417F51-8B93-4F15-A2BB-BB12FE286B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71417F51-8B93-4F15-A2BB-BB12FE286B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71417F51-8B93-4F15-A2BB-BB12FE286B24}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0A34F954-7EEA-4E86-958A-F38FD54EC77E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0A34F954-7EEA-4E86-958A-F38FD54EC77E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A34F954-7EEA-4E86-958A-F38FD54EC77E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -23,13 +37,15 @@ Global
 		{3C466BA6-3532-4DBD-82A1-167D9EFC919F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C466BA6-3532-4DBD-82A1-167D9EFC919F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C466BA6-3532-4DBD-82A1-167D9EFC919F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71417F51-8B93-4F15-A2BB-BB12FE286B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71417F51-8B93-4F15-A2BB-BB12FE286B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71417F51-8B93-4F15-A2BB-BB12FE286B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71417F51-8B93-4F15-A2BB-BB12FE286B24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{71417F51-8B93-4F15-A2BB-BB12FE286B24} = {68BB4A8A-6135-469F-9362-4C2C00704015}
+		{541D4C8C-B767-4E98-B0A9-58E383F498A9} = {192767BF-0AEB-44BC-AD0B-283EDD193D28}
+		{0A34F954-7EEA-4E86-958A-F38FD54EC77E} = {BB8C6943-F803-4E25-BEB2-BABDDD33943D}
+		{3C466BA6-3532-4DBD-82A1-167D9EFC919F} = {BB8C6943-F803-4E25-BEB2-BABDDD33943D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2F557BC-2B5D-4A8A-B404-216BA3EA2093}
