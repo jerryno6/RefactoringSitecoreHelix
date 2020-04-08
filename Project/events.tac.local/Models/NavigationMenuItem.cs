@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 
 namespace events.tac.local.Models
 {
-    public class NavigationMenuItem : NavigationItem
+    public class NavigationMenuItem : TAC.Sitecore.Models.NavigationItem
     {
         public IEnumerable<NavigationMenuItem> Children { get; private set; }
 

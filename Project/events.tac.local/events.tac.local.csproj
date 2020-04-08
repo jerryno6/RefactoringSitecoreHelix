@@ -97,19 +97,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Business\BreadcrumbRedBuilder.cs" />
     <Compile Include="Business\BreadcrumbBuilder.cs" />
     <Compile Include="Business\NavigationBuilder.cs" />
     <Compile Include="Business\RelatedEventsProvider.cs" />
-    <Compile Include="Controllers\BreadcrumbRedController.cs" />
     <Compile Include="Controllers\BreadcrumbController.cs" />
     <Compile Include="Controllers\EventIntroController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
     <Compile Include="Controllers\RelatedEventsController.cs" />
     <Compile Include="Models\EventIntro.cs" />
-    <Compile Include="Models\BreadcrumRedItem.cs" />
-    <Compile Include="Models\NavigationItem.cs" />
+    <Compile Include="Models\BreadcrumbItem.cs" />
     <Compile Include="Models\NavigationMenuItem.cs" />
+    <Compile Include="Models\RelatedEventItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -257,7 +255,6 @@
     <Content Include="Views\TAC\Vu\Components\VuHeaderFull.cshtml" />
     <Content Include="Views\TAC\Vu\Components\VuHeeaderSimple.cshtml" />
     <Content Include="Views\TAC\Vu\Layouts\VuEventDetails.cshtml" />
-    <Content Include="Views\BreadcrumbRed\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -269,6 +266,10 @@
     <ProjectReference Include="..\..\Foundation\TAC.Sitecore.Abstractions\TAC.Sitecore.Abstractions.csproj">
       <Project>{71417f51-8b93-4f15-a2bb-bb12fe286b24}</Project>
       <Name>TAC.Sitecore.Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Foundation\TAC.Sitecore.Models\TAC.Sitecore.Models.csproj">
+      <Project>{07c088e9-7c03-4454-9ec3-e271f083e8d6}</Project>
+      <Name>TAC.Sitecore.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

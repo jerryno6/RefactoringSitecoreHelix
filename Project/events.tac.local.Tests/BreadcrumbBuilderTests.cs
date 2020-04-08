@@ -44,7 +44,7 @@ namespace events.tac.local.Tests
 
     public class BreadcrumbBuilderDataTests
     {       
-        private readonly IEnumerable<NavigationItem> _sut;
+        private readonly IEnumerable<BreadcrumbItem> _sut;
         private readonly dynamic _sitecore;
 
         public BreadcrumbBuilderDataTests()

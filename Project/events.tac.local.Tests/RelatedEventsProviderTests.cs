@@ -26,7 +26,7 @@ namespace events.tac.local.Tests
     public class RelatedEventsProviderDataTests
     {
         private readonly dynamic _sitecore;
-        private readonly IEnumerable<NavigationItem> _sut;
+        private readonly IEnumerable<RelatedEventItem> _sut;
 
         public RelatedEventsProviderDataTests()
         {
@@ -71,7 +71,7 @@ namespace events.tac.local.Tests
     }
     public class RelatedEventsProvideEmptyFieldEETests
     {
-        protected readonly IEnumerable<NavigationItem> _sut;
+        protected readonly IEnumerable<RelatedEventItem> _sut;
         public RelatedEventsProvideEmptyFieldEETests()
         {
             TestRenderingContext context = PrepareContext();

@@ -22,18 +22,18 @@ namespace events.tac.local.Business
             this._context = renderingContext;
         }
 
-        public IEnumerable<NavigationItem> Build()
+        public IEnumerable<BreadcrumbItem> Build()
         {
             var ancestors = _context.ContextItem.GetAncestors().ToList();
             var b = _context.ContextItem;
 
             return _context?.HomeItem == null || _context?.ContextItem == null ?
-                Enumerable.Empty<NavigationItem>() :
+                Enumerable.Empty<BreadcrumbItem>() :
                 _context
                     .ContextItem
                     .GetAncestors()
                     .Where(i => _context.HomeItem.IsAncestorOrSelf(i))
-                    .Select(i => new NavigationItem
+                    .Select(i => new BreadcrumbItem
                     (
                         title: i.DisplayName,
                         url: i.Url,
@@ -41,7 +41,7 @@ namespace events.tac.local.Business
                     ))
                     .Concat(new[]
                     {
-                        new NavigationItem
+                        new BreadcrumbItem
                         (
                             title: _context.ContextItem.DisplayName,
                             url: _context.ContextItem.Url,

@@ -23,12 +23,12 @@ namespace events.tac.local.Business
             this._context = renderingContext;
         }
 
-        public IEnumerable<NavigationItem> GetRelatedEvents()
+        public IEnumerable<RelatedEventItem> GetRelatedEvents()
         {
             return _context
                 .ContextItem
                 .GetMultilistFieldItems("relatedEvents")
-                .Select(i => new NavigationItem
+                .Select(i => new RelatedEventItem
                 (
                     title: i.DisplayName,
                     url: i.Url
