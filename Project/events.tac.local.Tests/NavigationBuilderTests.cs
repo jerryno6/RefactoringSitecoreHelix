@@ -3,7 +3,7 @@ using events.tac.local.Models;
 using System.Linq;
 using TAC.Sitecore.Abstractions.Interfaces;
 using TAC.Sitecore.Abstractions.Testing;
-using events.tac.local.Business;
+using TAC.Sitecore.Models;
 using Xunit;
 
 namespace events.tac.local.Tests

@@ -81,6 +81,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Foundation\TAC.Sitecore.Models\TAC.Sitecore.Models.csproj">
+      <Project>{07c088e9-7c03-4454-9ec3-e271f083e8d6}</Project>
+      <Name>TAC.Sitecore.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\events.tac.local\events.tac.local.csproj">
       <Project>{0A34F954-7EEA-4E86-958A-F38FD54EC77E}</Project>
       <Name>events.tac.local</Name>
@@ -92,6 +96,9 @@
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\..\packages\xunit.analyzers.0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

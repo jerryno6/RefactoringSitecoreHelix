@@ -1,15 +1,15 @@
 ﻿@model IEnumerable<events.tac.BreadcrumbRed.Models.BreadcrumbItem>
 
-    <!-- [Breadcrumb Navigation] -->
-    <ol class="breadcrumb">
-        @foreach (var navitem in Model)
-        {
-            <li>
-                <a class="@(navitem.Active ? "active" : string.Empty)" 
-                   href="@navitem.URL">
-                    @navitem.Title
-                </a>
-            </li>
-        }
-    </ol>
-    <!-- [/Breadcrumb Navigation] -->
+<!-- [Breadcrumb Navigation] -->
+<ol class="breadcrumb">
+    @foreach (var navitem in Model)
+    {
+        <li>
+            <a class="@(navitem.Active ? "active" : string.Empty)"
+               href="@navitem.URL">
+                @navitem.Title
+            </a>
+        </li>
+    }
+</ol>
+<!-- [/Breadcrumb Navigation] -->
