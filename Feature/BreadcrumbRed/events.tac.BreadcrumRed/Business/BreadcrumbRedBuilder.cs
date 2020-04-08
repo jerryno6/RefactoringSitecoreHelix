@@ -1,4 +1,4 @@
-﻿using events.tac.local.Models;
+﻿using events.tac.BreadcrumbRed.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,18 +6,18 @@ using System.Web;
 using TAC.Sitecore.Abstractions.Interfaces;
 using TAC.Sitecore.Abstractions.SitecoreImplementation;
 
-namespace events.tac.local.Business
+namespace events.tac.BreadcrumbRed.Business
 {
-    public class BreadcrumbBuilder
+    public class BreadcrumbRedBuilder
     {
         private IRenderingContext _context;
 
-        public BreadcrumbBuilder() : this(SitecoreRenderingContext.Create())
+        public BreadcrumbRedBuilder() : this(SitecoreRenderingContext.Create())
         {
 
         }
 
-        public BreadcrumbBuilder(IRenderingContext renderingContext)
+        public BreadcrumbRedBuilder(IRenderingContext renderingContext)
         {
             this._context = renderingContext;
         }
