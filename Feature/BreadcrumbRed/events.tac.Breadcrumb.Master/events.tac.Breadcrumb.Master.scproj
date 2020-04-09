@@ -84,7 +84,6 @@
     <ExcludedAssemblies Include="ComponentArt.Web.UI.dll" />
     <ExcludedAssemblies Include="EcmaScript.NET.dll" />
     <ExcludedAssemblies Include="events.tac.BreadcrumRed.dll.config" />
-    <ExcludedAssemblies Include="events.tac.local.dll" />
     <ExcludedAssemblies Include="events.tac.local.dll.config" />
     <ExcludedAssemblies Include="FiftyOne.Foundation.dll" />
     <ExcludedAssemblies Include="HedgehogDevelopment.SitecoreProject.Service.dll" />
@@ -496,8 +495,6 @@
     <ExcludedAssemblies Include="System.Xml.XPath.dll" />
     <ExcludedAssemblies Include="System.Xml.XPath.XDocument.dll" />
     <ExcludedAssemblies Include="System.Xml.XPath.XDocument.dll" />
-    <ExcludedAssemblies Include="TAC.Sitecore.Abstractions.dll" />
-    <ExcludedAssemblies Include="TAC.Sitecore.Models.dll" />
     <ExcludedAssemblies Include="Telerik.Web.Design.dll" />
     <ExcludedAssemblies Include="Telerik.Web.Device.Detection.dll" />
     <ExcludedAssemblies Include="Telerik.Web.UI.dll" />
