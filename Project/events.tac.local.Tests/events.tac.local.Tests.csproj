@@ -82,7 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Foundation\TAC.Sitecore.Models\TAC.Sitecore.Models.csproj">
-      <Project>{07c088e9-7c03-4454-9ec3-e271f083e8d6}</Project>
+      <Project>{9d5b2add-6022-47a9-a0ac-87c52422c688}</Project>
       <Name>TAC.Sitecore.Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\events.tac.local\events.tac.local.csproj">
