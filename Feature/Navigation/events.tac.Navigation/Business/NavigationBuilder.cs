@@ -1,6 +1,6 @@
 ﻿
 
-using events.tac.local.Models;
+using events.tac.Navigation.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Web;
 using TAC.Sitecore.Abstractions.Interfaces;
 using TAC.Sitecore.Abstractions.SitecoreImplementation;
 
-namespace events.tac.local.Business
+namespace events.tac.Navigation.Business
 {
     public class NavigationBuilder
     {

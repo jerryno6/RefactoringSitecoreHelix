@@ -1,0 +1,56 @@
+﻿<Project>
+  <PropertyGroup>
+    <Site Server="events.tac.local" UserName="sitecore\admin" IsRemoteSitecore="False" />
+  </PropertyGroup>
+  <File Include="Views\TAC\Events\Layouts\Events.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/TAC/Events/Layouts/Events.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{ACC7BA6C-1BE9-4193-BE7F-BBE5022F70A7}</Item>
+  </File>
+  <File Include="Views\TAC\Events\Layouts\Content-Page.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{289BA9DF-4F10-4498-8EFD-190309713E4C}</Item>
+  </File>
+  <File Include="/Views/TAC/Events/Layouts/Content-Page.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{289BA9DF-4F10-4498-8EFD-190309713E4C}</Item>
+  </File>
+  <File Include="Views\TAC\Events\Layouts\Event-Detail.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{0A810AAF-E5B6-48EC-8BBB-B2079B033C9D}</Item>
+  </File>
+  <File Include="/Views/TAC/Events/Layouts/Event-Detail.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{0A810AAF-E5B6-48EC-8BBB-B2079B033C9D}</Item>
+  </File>
+  <File Include="Views\TAC\Events\Layouts\Event-List.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{31853FEE-8E9D-4C25-8C47-BFA13185CE1B}</Item>
+  </File>
+  <File Include="/Views/TAC/Events/Layouts/Event-List.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{31853FEE-8E9D-4C25-8C47-BFA13185CE1B}</Item>
+  </File>
+  <File Include="Views\TAC\Events\Layouts\Event-Section.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{CC6B5B8A-14AD-43A8-9BBF-CC3A556727ED}</Item>
+  </File>
+  <File Include="/Views/TAC/Events/Layouts/Event-Section.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{CC6B5B8A-14AD-43A8-9BBF-CC3A556727ED}</Item>
+  </File>
+  <File Include="Views\TAC\Events\SideContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{8EB02F1C-5BAE-4CEA-8942-97C5FC906542}</Item>
+  </File>
+  <File Include="Views\TAC\Events\PageContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{ED56F46F-AFCA-42EB-8D87-5BC1A002F05B}</Item>
+  </File>
+  <File Include="Views\TAC\Vu\Layouts\Index.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/TAC/Vu/Layouts/Index.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{8F235B33-3FA5-4E28-AFD4-6A29B486B1C6}</Item>
+  </File>
+  <File Include="Views\TAC\Vu\Components\VuFooter.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{8026B487-5726-4796-A4EB-039FA0769B54}</Item>
+  </File>
+  <File Include="Views\TAC\Vu\Components\VuHeaderFull.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{E28167DD-0084-442E-80CD-225809EE1CD1}</Item>
+  </File>
+  <File Include="Views\TAC\Vu\Components\VuHeeaderSimple.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{C2944D70-2EEB-4D77-8F8F-C24546917373}</Item>
+  </File>
+  <File Include="Views\TAC\Vu\Layouts\VuEventDetails.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/TAC/Vu/Layouts/VuEventDetails.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{A489B700-E57C-43B6-9094-31622301A452}</Item>
+  </File>
+</Project>

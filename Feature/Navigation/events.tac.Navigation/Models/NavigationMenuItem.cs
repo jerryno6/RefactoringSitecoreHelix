@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace events.tac.local.Models
+namespace events.tac.Navigation.Models
 {
     public class NavigationMenuItem : TAC.Sitecore.Models.NavigationItem
     {

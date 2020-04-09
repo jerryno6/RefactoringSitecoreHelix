@@ -4,18 +4,18 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>8e2608a0-2a36-458d-b35c-64c78a8249d5</ProjectGuid>
+    <ProjectGuid>{6c925628-00de-4de2-a762-f0b21e38146d}</ProjectGuid>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <SitecoreDatabase>master</SitecoreDatabase>
     <CompactSitecoreItemsInProjectFile>True</CompactSitecoreItemsInProjectFile>
-    <AssemblyName>events.tac.Breadcrumb.Master</AssemblyName>
-    <Name>events.tac.Breadcrumb.Master</Name>
-    <RootNamespace>events.tac.Breadcrumb.Master</RootNamespace>
+    <AssemblyName>events.tac.Navigation.Master</AssemblyName>
+    <Name>events.tac.Navigation.Master</Name>
+    <RootNamespace>events.tac.Navigation.Master</RootNamespace>
     <ManageRoles>False</ManageRoles>
     <AssemblyStatus>Exclude</AssemblyStatus>
-    <SourceWebVirtualPath>/events.tac.BreadcrumRed.csproj</SourceWebVirtualPath>
-    <SourceWebProject>{1674f4dd-eea3-43de-904a-8c9098a72ef1}|Feature\BreadcrumbRed\events.tac.BreadcrumRed\events.tac.BreadcrumRed.csproj</SourceWebProject>
-    <SourceWebPhysicalPath>..\events.tac.BreadcrumRed</SourceWebPhysicalPath>
+    <SourceWebVirtualPath>/events.tac.Navigation.csproj</SourceWebVirtualPath>
+    <SourceWebProject>{0f82fc74-25d9-4f4e-8ab5-c141fdfdcc1a}|Feature\Navigation\events.tac.Navigation\events.tac.Navigation.csproj</SourceWebProject>
+    <SourceWebPhysicalPath>..\events.tac.Navigation</SourceWebPhysicalPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,7 +35,7 @@
     <PackageAuthor />
     <PackagePublisher />
     <PackageVersion>0.0.1</PackageVersion>
-    <PackageReadme>Improve for breadcrumb</PackageReadme>
+    <PackageReadme>Improve for Navigation</PackageReadme>
     <SitecoreAssemblyPath>C:\inetpub\wwwroot\xp0.sc\bin</SitecoreAssemblyPath>
     <GeneratePackage>False</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
@@ -61,9 +61,9 @@
     </AssemblyAttributes>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\events.tac.BreadcrumRed\events.tac.BreadcrumRed.csproj">
-      <Project>{1674f4dd-eea3-43de-904a-8c9098a72ef1}</Project>
-      <Name>events.tac.BreadcrumRed</Name>
+    <ProjectReference Include="..\events.tac.Navigation\events.tac.Navigation.csproj">
+      <Project>{0f82fc74-25d9-4f4e-8ab5-c141fdfdcc1a}</Project>
+      <Name>events.tac.Navigation</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
