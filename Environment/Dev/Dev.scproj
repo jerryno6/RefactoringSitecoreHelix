@@ -20,25 +20,42 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreDeployFolder>C:\inetpub\wwwroot\xp0.sc\bin</SitecoreDeployFolder>
-    <SitecoreWebUrl>http://events.tac.local</SitecoreWebUrl>
-    <SitecoreAccessGuid>cbe9d3e4-3b56-4b14-af45-7df9370e3b58</SitecoreAccessGuid>
-    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <SitecoreDeployFolder>
+    </SitecoreDeployFolder>
+    <SitecoreWebUrl>
+    </SitecoreWebUrl>
+    <SitecoreAccessGuid>
+    </SitecoreAccessGuid>
+    <InstallSitecoreConnector>False</InstallSitecoreConnector>
     <PackageName>Dev</PackageName>
     <PackageAuthor />
     <PackagePublisher />
     <PackageVersion>0.0.1</PackageVersion>
     <PackageReadme>Improve for deployment</PackageReadme>
     <SitecoreAssemblyPath>C:\inetpub\wwwroot\xp0.sc\bin</SitecoreAssemblyPath>
-    <GeneratePackage>True</GeneratePackage>
+    <GeneratePackage>False</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>True</AddDateTimeToPackageName>
+    <DisableFileDeployment>True</DisableFileDeployment>
+    <LightningDeployMode>False</LightningDeployMode>
+    <EnableContainerDeployment>False</EnableContainerDeployment>
+    <ConnectorTimeoutSeconds>120</ConnectorTimeoutSeconds>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
     <OutputPath>.\bin\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <PackageName>Release</PackageName>
+    <PackageAuthor />
+    <PackagePublisher />
+    <PackageVersion />
+    <PackageReadme />
+    <SitecoreAssemblyPath />
+    <GeneratePackage>False</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
@@ -48,11 +65,20 @@
       <Value>$(AssemblyVersion)</Value>
     </AssemblyAttributes>
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
   <ItemGroup>
     <SourceWebProjects Include="{0a34f954-7eea-4e86-958a-f38fd54ec77e}|Project\events.tac.local\events.tac.local.csproj">
       <SourceWebPhysicalPath>..\..\Project\events.tac.local</SourceWebPhysicalPath>
       <SourceWebVirtualPath>/events.tac.local.csproj</SourceWebVirtualPath>
       <SourceWebProjectId>0a34f954-7eea-4e86-958a-f38fd54ec77e</SourceWebProjectId>
+    </SourceWebProjects>
+    <SourceWebProjects Include="{0f82fc74-25d9-4f4e-8ab5-c141fdfdcc1a}|Feature\Navigation\events.tac.Navigation\events.tac.Navigation.csproj">
+      <SourceWebPhysicalPath>..\..\Feature\Navigation\events.tac.Navigation</SourceWebPhysicalPath>
+      <SourceWebVirtualPath>/events.tac.Navigation.csproj</SourceWebVirtualPath>
+      <SourceWebProjectId>0f82fc74-25d9-4f4e-8ab5-c141fdfdcc1a</SourceWebProjectId>
     </SourceWebProjects>
     <SourceWebProjects Include="{1674f4dd-eea3-43de-904a-8c9098a72ef1}|Feature\BreadcrumbRed\events.tac.BreadcrumRed\events.tac.BreadcrumRed.csproj">
       <SourceWebPhysicalPath>..\..\Feature\BreadcrumbRed\events.tac.BreadcrumRed</SourceWebPhysicalPath>
@@ -65,12 +91,15 @@
       <Project>{1674f4dd-eea3-43de-904a-8c9098a72ef1}</Project>
       <Name>events.tac.BreadcrumRed</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Feature\Navigation\events.tac.Navigation\events.tac.Navigation.csproj">
+      <Project>{0f82fc74-25d9-4f4e-8ab5-c141fdfdcc1a}</Project>
+      <Name>events.tac.Navigation</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Project\events.tac.local\events.tac.local.csproj">
       <Project>{0a34f954-7eea-4e86-958a-f38fd54ec77e}</Project>
       <Name>events.tac.local</Name>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
   <ItemGroup>
     <ExcludedAssemblies Include="Antlr3.Runtime.dll" />
     <ExcludedAssemblies Include="ComponentArt.Web.UI.dll" />
@@ -494,9 +523,6 @@
     <ExcludedAssemblies Include="WebActivatorEx.dll" />
     <ExcludedAssemblies Include="WebGrease.dll" />
     <ExcludedAssemblies Include="Yahoo.Yui.Compressor.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
   </ItemGroup>
   <Import Project="..\..\packages\HedgehogDevelopment.TDS.6.0.0.9\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\..\packages\HedgehogDevelopment.TDS.6.0.0.9\build\HedgehogDevelopment.TDS.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
