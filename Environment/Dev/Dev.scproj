@@ -20,13 +20,10 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreDeployFolder>
-    </SitecoreDeployFolder>
-    <SitecoreWebUrl>
-    </SitecoreWebUrl>
-    <SitecoreAccessGuid>
-    </SitecoreAccessGuid>
-    <InstallSitecoreConnector>False</InstallSitecoreConnector>
+    <SitecoreDeployFolder>C:\inetpub\wwwroot\xp0.sc</SitecoreDeployFolder>
+    <SitecoreWebUrl>http://events.tac.local</SitecoreWebUrl>
+    <SitecoreAccessGuid>de51be42-e97c-4d76-9c76-45e1dcfe216d</SitecoreAccessGuid>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <PackageName>Dev</PackageName>
     <PackageAuthor />
     <PackagePublisher />
@@ -37,7 +34,7 @@
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>True</AddDateTimeToPackageName>
-    <DisableFileDeployment>True</DisableFileDeployment>
+    <DisableFileDeployment>False</DisableFileDeployment>
     <LightningDeployMode>False</LightningDeployMode>
     <EnableContainerDeployment>False</EnableContainerDeployment>
     <ConnectorTimeoutSeconds>120</ConnectorTimeoutSeconds>
@@ -56,6 +53,13 @@
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+    <InstallSitecoreConnector>False</InstallSitecoreConnector>
+    <DisableFileDeployment>True</DisableFileDeployment>
+    <LightningDeployMode>False</LightningDeployMode>
+    <EnableContainerDeployment>False</EnableContainerDeployment>
+    <ConnectorTimeoutSeconds>120</ConnectorTimeoutSeconds>
+    <EnableValidations>False</EnableValidations>
+    <ValidationSettingsFilePath>.\Dev_Release.xml</ValidationSettingsFilePath>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
