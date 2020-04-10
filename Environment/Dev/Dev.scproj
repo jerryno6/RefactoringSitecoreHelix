@@ -71,9 +71,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
   <ItemGroup>
-    <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <SourceWebProjects Include="{0a34f954-7eea-4e86-958a-f38fd54ec77e}|Project\events.tac.local\events.tac.local.csproj">
       <SourceWebPhysicalPath>..\..\Project\events.tac.local</SourceWebPhysicalPath>
       <SourceWebVirtualPath>/events.tac.local.csproj</SourceWebVirtualPath>
@@ -528,11 +525,14 @@
     <ExcludedAssemblies Include="WebGrease.dll" />
     <ExcludedAssemblies Include="Yahoo.Yui.Compressor.dll" />
   </ItemGroup>
-  <Import Project="..\..\packages\HedgehogDevelopment.TDS.6.0.0.9\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\..\packages\HedgehogDevelopment.TDS.6.0.0.9\build\HedgehogDevelopment.TDS.targets')" />
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <Import Project="..\..\packages\HedgehogDevelopment.TDS.6.0.0.14\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\..\packages\HedgehogDevelopment.TDS.6.0.0.14\build\HedgehogDevelopment.TDS.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\HedgehogDevelopment.TDS.6.0.0.9\build\HedgehogDevelopment.TDS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\HedgehogDevelopment.TDS.6.0.0.9\build\HedgehogDevelopment.TDS.targets'))" />
+    <Error Condition="!Exists('..\..\packages\HedgehogDevelopment.TDS.6.0.0.14\build\HedgehogDevelopment.TDS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\HedgehogDevelopment.TDS.6.0.0.14\build\HedgehogDevelopment.TDS.targets'))" />
   </Target>
 </Project>
