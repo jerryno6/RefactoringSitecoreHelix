@@ -23,7 +23,7 @@
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
     <SitecoreDeployFolder>C:\inetpub\wwwroot\xp0.sc</SitecoreDeployFolder>
     <SitecoreWebUrl>http://events.tac.local</SitecoreWebUrl>
-    <SitecoreAccessGuid>cbe9d3e4-3b56-4b14-af45-7df9370e3b58</SitecoreAccessGuid>
+    <SitecoreAccessGuid>8fdf6818-b948-4548-8e28-e0c0492defde</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <DisableFileDeployment>False</DisableFileDeployment>
     <LightningDeployMode>False</LightningDeployMode>

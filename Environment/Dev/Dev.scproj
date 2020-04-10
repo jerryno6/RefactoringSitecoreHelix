@@ -30,7 +30,7 @@
     <PackageVersion>0.0.1</PackageVersion>
     <PackageReadme>Improve for deployment</PackageReadme>
     <SitecoreAssemblyPath>C:\inetpub\wwwroot\xp0.sc\bin</SitecoreAssemblyPath>
-    <GeneratePackage>False</GeneratePackage>
+    <GeneratePackage>True</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>True</AddDateTimeToPackageName>
@@ -38,6 +38,11 @@
     <LightningDeployMode>False</LightningDeployMode>
     <EnableContainerDeployment>False</EnableContainerDeployment>
     <ConnectorTimeoutSeconds>120</ConnectorTimeoutSeconds>
+    <BuildWebDeploy>False</BuildWebDeploy>
+    <WebDeployPackageCodeAndItemOptions>CodeAndItems</WebDeployPackageCodeAndItemOptions>
+    <WebDeployPackageName />
+    <WebDeployAppendDateAndTimeToPackageName>False</WebDeployAppendDateAndTimeToPackageName>
+    <ContinueOnItemDeployError>False</ContinueOnItemDeployError>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -71,7 +76,32 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
   <ItemGroup>
-    <Content Include="packages.config" />
+    <ProjectReference Include="..\..\Feature\BreadcrumbRed\events.tac.Breadcrumb.Master\events.tac.Breadcrumb.Master.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Feature\BreadcrumbRed\events.tac.BreadcrumRed\events.tac.BreadcrumRed.csproj">
+      <Project>{1674f4dd-eea3-43de-904a-8c9098a72ef1}</Project>
+      <Name>events.tac.BreadcrumRed</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Feature\Navigation\events.tac.Navigation.Master\events.tac.Navigation.Master.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Feature\Navigation\events.tac.Navigation\events.tac.Navigation.csproj">
+      <Project>{0f82fc74-25d9-4f4e-8ab5-c141fdfdcc1a}</Project>
+      <Name>events.tac.Navigation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Project\events.tac.local\events.tac.local.csproj">
+      <Project>{0a34f954-7eea-4e86-958a-f38fd54ec77e}</Project>
+      <Name>events.tac.local</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundledProject Include="..\..\Feature\BreadcrumbRed\events.tac.Breadcrumb.Master\events.tac.Breadcrumb.Master.scproj">
+      <ProjectId>{8e2608a0-2a36-458d-b35c-64c78a8249d5}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\..\Feature\Navigation\events.tac.Navigation.Master\events.tac.Navigation.Master.scproj">
+      <ProjectId>{6c925628-00de-4de2-a762-f0b21e38146d}</ProjectId>
+    </BundledProject>
   </ItemGroup>
   <ItemGroup>
     <SourceWebProjects Include="{0a34f954-7eea-4e86-958a-f38fd54ec77e}|Project\events.tac.local\events.tac.local.csproj">
@@ -89,20 +119,6 @@
       <SourceWebVirtualPath>/events.tac.BreadcrumRed.csproj</SourceWebVirtualPath>
       <SourceWebProjectId>1674f4dd-eea3-43de-904a-8c9098a72ef1</SourceWebProjectId>
     </SourceWebProjects>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Feature\BreadcrumbRed\events.tac.BreadcrumRed\events.tac.BreadcrumRed.csproj">
-      <Project>{1674f4dd-eea3-43de-904a-8c9098a72ef1}</Project>
-      <Name>events.tac.BreadcrumRed</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Feature\Navigation\events.tac.Navigation\events.tac.Navigation.csproj">
-      <Project>{0f82fc74-25d9-4f4e-8ab5-c141fdfdcc1a}</Project>
-      <Name>events.tac.Navigation</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Project\events.tac.local\events.tac.local.csproj">
-      <Project>{0a34f954-7eea-4e86-958a-f38fd54ec77e}</Project>
-      <Name>events.tac.local</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ExcludedAssemblies Include="Antlr3.Runtime.dll" />
@@ -528,11 +544,4 @@
     <ExcludedAssemblies Include="WebGrease.dll" />
     <ExcludedAssemblies Include="Yahoo.Yui.Compressor.dll" />
   </ItemGroup>
-  <Import Project="..\..\packages\HedgehogDevelopment.TDS.6.0.0.9\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\..\packages\HedgehogDevelopment.TDS.6.0.0.9\build\HedgehogDevelopment.TDS.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\HedgehogDevelopment.TDS.6.0.0.9\build\HedgehogDevelopment.TDS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\HedgehogDevelopment.TDS.6.0.0.9\build\HedgehogDevelopment.TDS.targets'))" />
-  </Target>
 </Project>
