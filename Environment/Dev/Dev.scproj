@@ -76,6 +76,13 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
   <ItemGroup>
+    <ProjectReference Include="..\..\Feature\BasicContent\events.tac.BasicContent.Master\events.tac.BasicContent.Master.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Feature\BasicContent\events.tac.BasicContent\events.tac.BasicContent.csproj">
+      <Project>{e4c2c3b1-11c7-4c9d-bcbe-9e6c32806117}</Project>
+      <Name>events.tac.BasicContent</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Feature\BreadcrumbRed\events.tac.Breadcrumb.Master\events.tac.Breadcrumb.Master.scproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
@@ -90,18 +97,16 @@
       <Project>{0f82fc74-25d9-4f4e-8ab5-c141fdfdcc1a}</Project>
       <Name>events.tac.Navigation</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Foundation\TAC.Sitecore.Abstractions.Master\TAC.Sitecore.Abstractions.Master.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Project\events.tac.local.Master\events.tac.local.Master.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="..\..\Project\events.tac.local\events.tac.local.csproj">
       <Project>{0a34f954-7eea-4e86-958a-f38fd54ec77e}</Project>
       <Name>events.tac.local</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BundledProject Include="..\..\Feature\BreadcrumbRed\events.tac.Breadcrumb.Master\events.tac.Breadcrumb.Master.scproj">
-      <ProjectId>{8e2608a0-2a36-458d-b35c-64c78a8249d5}</ProjectId>
-    </BundledProject>
-    <BundledProject Include="..\..\Feature\Navigation\events.tac.Navigation.Master\events.tac.Navigation.Master.scproj">
-      <ProjectId>{6c925628-00de-4de2-a762-f0b21e38146d}</ProjectId>
-    </BundledProject>
   </ItemGroup>
   <ItemGroup>
     <SourceWebProjects Include="{0a34f954-7eea-4e86-958a-f38fd54ec77e}|Project\events.tac.local\events.tac.local.csproj">
@@ -118,6 +123,11 @@
       <SourceWebPhysicalPath>..\..\Feature\BreadcrumbRed\events.tac.BreadcrumRed</SourceWebPhysicalPath>
       <SourceWebVirtualPath>/events.tac.BreadcrumRed.csproj</SourceWebVirtualPath>
       <SourceWebProjectId>1674f4dd-eea3-43de-904a-8c9098a72ef1</SourceWebProjectId>
+    </SourceWebProjects>
+    <SourceWebProjects Include="{e4c2c3b1-11c7-4c9d-bcbe-9e6c32806117}|Feature\BasicContent\events.tac.BasicContent\events.tac.BasicContent.csproj">
+      <SourceWebPhysicalPath>..\..\Feature\BasicContent\events.tac.BasicContent</SourceWebPhysicalPath>
+      <SourceWebVirtualPath>/events.tac.BasicContent.csproj</SourceWebVirtualPath>
+      <SourceWebProjectId>e4c2c3b1-11c7-4c9d-bcbe-9e6c32806117</SourceWebProjectId>
     </SourceWebProjects>
   </ItemGroup>
   <ItemGroup>
@@ -543,5 +553,22 @@
     <ExcludedAssemblies Include="WebActivatorEx.dll" />
     <ExcludedAssemblies Include="WebGrease.dll" />
     <ExcludedAssemblies Include="Yahoo.Yui.Compressor.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundledProject Include="..\..\Feature\BasicContent\events.tac.BasicContent.Master\events.tac.BasicContent.Master.scproj">
+      <ProjectId>{7349fb71-d53d-41df-bcb0-6fdbfe7ff4c7}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\..\Feature\BreadcrumbRed\events.tac.Breadcrumb.Master\events.tac.Breadcrumb.Master.scproj">
+      <ProjectId>{8e2608a0-2a36-458d-b35c-64c78a8249d5}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\..\Feature\Navigation\events.tac.Navigation.Master\events.tac.Navigation.Master.scproj">
+      <ProjectId>{6c925628-00de-4de2-a762-f0b21e38146d}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\..\Foundation\TAC.Sitecore.Abstractions.Master\TAC.Sitecore.Abstractions.Master.scproj">
+      <ProjectId>{2d59de6f-30b0-438d-b10c-1c34a1bbf2dc}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\..\Project\events.tac.local.Master\events.tac.local.Master.scproj">
+      <ProjectId>{dd78fa53-4919-4ce2-b317-285139725c6d}</ProjectId>
+    </BundledProject>
   </ItemGroup>
 </Project>

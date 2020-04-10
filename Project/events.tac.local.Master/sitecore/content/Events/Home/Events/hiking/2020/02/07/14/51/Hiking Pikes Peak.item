@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {50FEF5CA-03FC-4E4B-9BAA-C3F92BB41A58}
+database: master
+path: /sitecore/content/Events/Home/Events/hiking/2020/02/07/14/51/Hiking Pikes Peak
+parent: {43B9FD2B-AA06-42B1-9CB9-5C0780A7D485}
+name: Hiking Pikes Peak
+master: {00000000-0000-0000-0000-000000000000}
+template: {62A976B4-BE68-49E3-BB7E-11BF3209C721}
+templatekey: Event Details
+created: 20200207T145101Z
+
+----field----
+field: {9DAFCA1D-D618-4616-86B8-A8ACD6B28A63}
+name: __Bucket Parent Reference
+key: __bucket parent reference
+content-length: 38
+
+{7220C596-82F4-449E-A884-FF3DD18FC91C}
+----version----
+language: en
+version: 1
+revision: 30fef660-d2ff-4950-93cf-68b58a443e3c
+
+----field----
+field: {314B72B7-DD0B-4691-857F-0FFB3CF3F9AB}
+name: ContentBody
+key: contentbody
+content-length: 19
+
+Demo for Pikes Peak
+----field----
+field: {01061E81-5654-4EC8-88D9-0C6FD3B156A4}
+name: ContentHeading
+key: contentheading
+content-length: 17
+
+Hiking Pikes Peak
+----field----
+field: {3FE62C1E-5B04-4191-89DC-1EEA14AE9351}
+name: MetaTitle
+key: metatitle
+content-length: 17
+
+Hiking Pikes Peak
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20200207T145101Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+30fef660-d2ff-4950-93cf-68b58a443e3c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20200207T075213Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

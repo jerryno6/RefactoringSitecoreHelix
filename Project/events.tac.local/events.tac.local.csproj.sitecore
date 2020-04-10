@@ -30,12 +30,6 @@
   <File Include="/Views/TAC/Events/Layouts/Event-Section.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="master">{CC6B5B8A-14AD-43A8-9BBF-CC3A556727ED}</Item>
   </File>
-  <File Include="Views\TAC\Events\SideContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
-    <Item DatabaseName="master">{8EB02F1C-5BAE-4CEA-8942-97C5FC906542}</Item>
-  </File>
-  <File Include="Views\TAC\Events\PageContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
-    <Item DatabaseName="master">{ED56F46F-AFCA-42EB-8D87-5BC1A002F05B}</Item>
-  </File>
   <File Include="Views\TAC\Vu\Layouts\Index.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
   <File Include="/Views/TAC/Vu/Layouts/Index.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="master">{8F235B33-3FA5-4E28-AFD4-6A29B486B1C6}</Item>

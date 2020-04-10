@@ -44,9 +44,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Sitecore.Kernel.NoReferences.9.0.180604\lib\NET462\Sitecore.Kernel.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Sitecore.Mvc.NoReferences.9.0.180604\lib\NET462\Sitecore.Mvc.dll</HintPath>
     </Reference>
@@ -97,11 +94,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Business\RelatedEventsProvider.cs" />
-    <Compile Include="Controllers\EventIntroController.cs" />
-    <Compile Include="Controllers\RelatedEventsController.cs" />
-    <Compile Include="Models\EventIntro.cs" />
-    <Compile Include="Models\RelatedEventItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -232,15 +224,6 @@
     <Content Include="Views\TAC\Events\Layouts\Event-List.cshtml" />
     <Content Include="Views\TAC\Events\Layouts\Event-Section.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\EventIntro\Index.cshtml" />
-    <Content Include="Views\TAC\Events\SideContent.cshtml" />
-    <Content Include="Views\TAC\Events\PageContent.cshtml" />
-    <Content Include="Views\TAC\Events\Two-Column.cshtml" />
-    <Content Include="Views\TAC\Events\One-Column.cshtml" />
-    <Content Include="Views\TAC\Events\HomeContent.cshtml" />
-    <Content Include="Views\TAC\Events\FeatureRow.cshtml" />
-    <Content Include="Views\TAC\Events\FeatureEvent.cshtml" />
-    <Content Include="Views\RelatedEvents\Index.cshtml" />
     <Content Include="Views\TAC\Vu\Layouts\Index.cshtml" />
     <Content Include="Views\TAC\Vu\Components\VuHomeContent.cshtml" />
     <Content Include="Views\TAC\Vu\Components\VuFooter.cshtml" />
@@ -263,6 +246,11 @@
       <Project>{9d5b2add-6022-47a9-a0ac-87c52422c688}</Project>
       <Name>TAC.Sitecore.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Business\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>

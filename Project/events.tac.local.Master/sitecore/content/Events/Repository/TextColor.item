@@ -1,0 +1,45 @@
+----item----
+version: 1
+id: {E67733A9-2A2D-46F7-AB2A-5954CA7EDEAF}
+database: master
+path: /sitecore/content/Events/Repository/TextColor
+parent: {8E5B3C04-528A-43CD-B350-CCE8143C8D14}
+name: TextColor
+master: {00000000-0000-0000-0000-000000000000}
+template: {681ACC23-D4E3-411A-A758-B3BB5A5B947E}
+templatekey: Bootstrap Background Folder
+created: 20200213T074309Z
+
+----version----
+language: en
+version: 1
+revision: c240f4a1-f434-44a7-833a-d9fa12bbfab4
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20200213T074309Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c240f4a1-f434-44a7-833a-d9fa12bbfab4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20200213T074318Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

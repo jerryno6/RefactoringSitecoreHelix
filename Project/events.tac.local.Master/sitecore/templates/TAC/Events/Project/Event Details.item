@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {62A976B4-BE68-49E3-BB7E-11BF3209C721}
+database: master
+path: /sitecore/templates/TAC/Events/Project/Event Details
+parent: {4D5A4E0B-995D-479E-82A7-0A596C5F8CE1}
+name: Event Details
+master: {00000000-0000-0000-0000-000000000000}
+template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
+templatekey: Template
+created: 20200206T113425Z
+
+----field----
+field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
+name: __Base template
+key: __base template
+content-length: 233
+
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{0FB8BB82-7243-49F9-8802-E88B2C0F6F83}|{B8B4DA4B-8CAB-42B9-8E57-79AD64ED1AC9}|{B0425C15-338C-4D25-96AC-4DF254E2A97E}|{4019A865-FDEE-4A64-ACBE-3E187E1AD40A}|{550D16D5-1C8B-48A2-B67B-3ED536F41E17}
+----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
+content-length: 38
+
+{9B237271-CBCC-4476-BAAD-ACF769A4D375}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 20
+
+office/32x32/pin.png
+----version----
+language: en
+version: 1
+revision: 801d7df2-2655-4863-9f26-d5acd14453d5
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20200206T113425Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+801d7df2-2655-4863-9f26-d5acd14453d5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20200409T075200Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

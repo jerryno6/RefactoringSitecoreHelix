@@ -501,5 +501,8 @@
     <SitecoreItem Include="sitecore\layout\Renderings\TAC\Events\Feature\Breadcrumb\BreadcrumbRed.item"><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\TAC\Events\Feature\Breadcrumb\View1.item"><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
   </ItemGroup>
+  <ItemGroup>
+    <CodeGenReferencedProject Include="{2d59de6f-30b0-438d-b10c-1c34a1bbf2dc}" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>

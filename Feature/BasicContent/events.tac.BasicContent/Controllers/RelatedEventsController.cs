@@ -1,0 +1,30 @@
+﻿using events.tac.BasicContent.Business;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace events.tac.BasicContent.Controllers
+{
+    public class RelatedEventsController : Controller
+    {
+        private readonly RelatedEventsProvider _provider;
+
+        public RelatedEventsController() : this(new RelatedEventsProvider())
+        {
+
+        }
+
+        public RelatedEventsController(RelatedEventsProvider builder)
+        {
+            _provider = builder;
+        }
+
+        // GET: RelatedEvents
+        public ActionResult Index()
+        {
+            return View(_provider.GetRelatedEvents());
+        }
+    }
+}
